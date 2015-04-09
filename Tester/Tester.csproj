@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96DBAEEE-F002-432C-AFE3-30D0A0E3AC87}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tester</RootNamespace>
+    <AssemblyName>Tester</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Mathijssen-Tuxlets-Test-Dummy-Tux.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\HomeController.cs" />
+    <Compile Include="FrmImages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImages.Designer.cs">
+      <DependentUpon>FrmImages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEntityFramework.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEntityFramework.Designer.cs">
+      <DependentUpon>FrmEntityFramework.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNetLibrary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNetLibrary.Designer.cs">
+      <DependentUpon>FrmNetLibrary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWin32.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWin32.Designer.cs">
+      <DependentUpon>FrmWin32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Home\Index.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Home\Manager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="FrmImages.resx">
+      <DependentUpon>FrmImages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEntityFramework.resx">
+      <DependentUpon>FrmEntityFramework.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNetLibrary.resx">
+      <DependentUpon>FrmNetLibrary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWin32.resx">
+      <DependentUpon>FrmWin32.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\Home\Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Home\Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetLibrary.Archives\NetLibrary.Archives.csproj">
+      <Project>{e62a100f-34ff-4171-93aa-9f7388fcc268}</Project>
+      <Name>NetLibrary.Archives</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetLibrary.DataBase\NetLibrary.DataBase.csproj">
+      <Project>{7d59054e-5995-478f-8996-c484eb44234d}</Project>
+      <Name>NetLibrary.DataBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetLibrary.Developer\NetLibrary.Developer.csproj">
+      <Project>{355dac3b-6e00-4db5-9b9f-3a49fa3e4165}</Project>
+      <Name>NetLibrary.Developer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetLibrary.Drawing\NetLibrary.Drawing.csproj">
+      <Project>{b9ca1311-9bb5-40ab-b5ae-4fa5eec06c01}</Project>
+      <Name>NetLibrary.Drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetLibrary.EntityFramework\NetLibrary.EntityFramework.csproj">
+      <Project>{430f0620-f031-4137-8478-d01bf1b1cca4}</Project>
+      <Name>NetLibrary.EntityFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetLibrary.Forms.Beauty\NetLibrary.Forms.Beauty.csproj">
+      <Project>{a9cdffe9-ab90-4d2d-b513-b7ece604432e}</Project>
+      <Name>NetLibrary.Forms.Beauty</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetLibrary.Forms.Mvc\NetLibrary.Forms.Mvc.csproj">
+      <Project>{d949085f-2923-4b65-8309-7269bd75f5ac}</Project>
+      <Name>NetLibrary.Forms.Mvc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetLibrary.Forms.Taskbar\NetLibrary.Forms.Taskbar.csproj">
+      <Project>{0b87abb9-86e9-4731-8dc7-458df94addf3}</Project>
+      <Name>NetLibrary.Forms.Taskbar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetLibrary.Forms\NetLibrary.Forms.csproj">
+      <Project>{f56ef891-3823-4b17-b550-cfaf348a5988}</Project>
+      <Name>NetLibrary.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetLibrary.Images\NetLibrary.Images.csproj">
+      <Project>{9c1b1837-08ab-462c-8a92-e6e06588bf8d}</Project>
+      <Name>NetLibrary.Images</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetLibrary.Media\NetLibrary.Media.csproj">
+      <Project>{f7af4f23-6676-48e8-a0f0-508ed1a3f2e8}</Project>
+      <Name>NetLibrary.Media</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetLibrary.Security\NetLibrary.Security.csproj">
+      <Project>{a96ef08e-f15e-4f51-b0e3-07095f528dd6}</Project>
+      <Name>NetLibrary.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetLibrary.Web.MVC\NetLibrary.Web.MVC.csproj">
+      <Project>{f3490706-3511-455f-829a-d5f71f8cbb83}</Project>
+      <Name>NetLibrary.Web.MVC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetLibrary.Web\NetLibrary.Web.csproj">
+      <Project>{66bfe463-5a26-45f0-996a-c8fa43ec5bbe}</Project>
+      <Name>NetLibrary.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetLibrary.Win32\NetLibrary.Win32.csproj">
+      <Project>{4536b12f-1a07-4748-8b0b-0dda06be7ec0}</Project>
+      <Name>NetLibrary.Win32</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetLibrary\NetLibrary.csproj">
+      <Project>{504a67d4-b8cc-444d-824f-b64273917768}</Project>
+      <Name>NetLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Mathijssen-Tuxlets-Test-Dummy-Tux.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

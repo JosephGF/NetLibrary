@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A9CDFFE9-AB90-4D2D-B513-B7ECE604432E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NetLibrary.Forms.Beauty</RootNamespace>
+    <AssemblyName>NetLibrary.Forms.Beauty</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BeautyCards.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BeautyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeautyForm.Designer.cs">
+      <DependentUpon>BeautyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeautyFormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeautyFormAbout.Designer.cs">
+      <DependentUpon>BeautyFormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeautyGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BeautyTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetLibrary.Drawing\NetLibrary.Drawing.csproj">
+      <Project>{b9ca1311-9bb5-40ab-b5ae-4fa5eec06c01}</Project>
+      <Name>NetLibrary.Drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetLibrary\NetLibrary.csproj">
+      <Project>{504a67d4-b8cc-444d-824f-b64273917768}</Project>
+      <Name>NetLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BeautyForm.resx">
+      <DependentUpon>BeautyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeautyFormAbout.resx">
+      <DependentUpon>BeautyFormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
