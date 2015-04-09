@@ -25,31 +25,31 @@ Wrapper for .net EntityFramework
 Custom Forms and controls
 
 #####NetLibrary.Forms.Beauty
-Custom Forms with custom style and colours
+Custom Forms with custom style and colors.
 
-######NetLibrary.Forms.Mvc
+#####NetLibrary.Forms.Mvc
 Mvc structure for windows forms (alpha version)
 
-######NetLibrary.Forms.Taskbar
+#####NetLibrary.Forms.Taskbar
 Manage taskbar functions for windows 7 and early
 
-######NetLibrary.Images
+#####NetLibrary.Images
 Conversions, crops and resice images
 
-######NetLibrary.Media
+#####NetLibrary.Media
 Basic sounds utilities
 
-######NetLibrary.Security
+#####NetLibrary.Security
 Criptology
 
-######NetLibrary.Web
+#####NetLibrary.Web
 Send Mails and get data for networks resources
 
-######NetLibrary.Web.MVC
+#####NetLibrary.Web.MVC
 Mvc Wrapper to do default actions widthout any code line
 
-######NetLibrary.Win32
+#####NetLibrary.Win32
 Functions of system API
 
-######Test
+#####Test
 A test project to check all libraries
