@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetLibrary", "NetLibrary\NetLibrary.csproj", "{504A67D4-B8CC-444D-824F-B64273917768}"
 EndProject
@@ -40,8 +40,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetLibrary.Forms.Mvc", "NetLibrary.Forms.Mvc\NetLibrary.Forms.Mvc.csproj", "{D949085F-2923-4B65-8309-7269BD75F5AC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetLibrary.DataBase", "NetLibrary.DataBase\NetLibrary.DataBase.csproj", "{7D59054E-5995-478F-8996-C484EB44234D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageResize", "ImageResize\ImageResize.csproj", "{0E3E33BB-0BB4-496F-A89B-3B92B5A89B90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,10 +115,6 @@ Global
 		{7D59054E-5995-478F-8996-C484EB44234D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D59054E-5995-478F-8996-C484EB44234D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D59054E-5995-478F-8996-C484EB44234D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0E3E33BB-0BB4-496F-A89B-3B92B5A89B90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E3E33BB-0BB4-496F-A89B-3B92B5A89B90}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0E3E33BB-0BB4-496F-A89B-3B92B5A89B90}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0E3E33BB-0BB4-496F-A89B-3B92B5A89B90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
